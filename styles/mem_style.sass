@@ -1,0 +1,73 @@
+// colors
+
+$cardBack: #73b39c
+//$cardBack: #ff9494
+$cardFront: #ff9494
+$cardText: black
+$hiddenHov: #ff0056
+$flippedHov: #dba4a8
+
+@mixin user-select($select)
+  -moz-user-select: $select
+  -webkit-user-select: $select
+  -ms-user-select: $select
+  user-select: $select
+
+
+*
+  margin: 0px
+  padding: 0px
+
+body
+  height: 100%
+  position: relative
+  font-family: sans-serif
+
+#container
+  min-height: 100%
+
+  #header
+    text-align: center
+    padding-top: 50px
+    margin-bottom: 30px
+    font-size: 40px
+    @include user-select(none)
+
+  #prompt
+    text-align: center
+    padding-bottom: 30px
+    h1
+      padding-bottom: 25px
+
+  #gamegrid
+    margin: 0px auto
+    padding-bottom: 25px
+    td
+      width: 75px
+      height: 75px
+      text-align: center
+      font-size: 30px
+      padding: 5px
+    .hidden
+      background-color: $cardBack
+      color: $cardBack
+      @include user-select(none)
+      cursor: pointer
+      .span
+        display: hidden
+        cursor: pointer
+
+    .flipped
+      background-color: $cardFront
+      // box-sizing: border-box
+    .hiddenHov
+      background-color: $hiddenHov
+      color: $hiddenHov
+      cursor: pointer
+      @include user-select(none)
+    .flippedHov
+      background-color: $flippedHov
+
+  #output
+    text-align: center
+    font-size: 20px

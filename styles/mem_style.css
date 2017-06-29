@@ -1,0 +1,60 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  height: 100%;
+  position: relative;
+  font-family: sans-serif; }
+
+#container {
+  min-height: 100%; }
+  #container #header {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  #container #prompt {
+    text-align: center;
+    padding-bottom: 30px; }
+    #container #prompt h1 {
+      padding-bottom: 25px; }
+  #container #gamegrid {
+    margin: 0px auto;
+    padding-bottom: 25px; }
+    #container #gamegrid td {
+      width: 75px;
+      height: 75px;
+      text-align: center;
+      font-size: 30px;
+      padding: 5px; }
+    #container #gamegrid .hidden {
+      background-color: #73b39c;
+      color: #73b39c;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      cursor: pointer; }
+      #container #gamegrid .hidden .span {
+        display: hidden;
+        cursor: pointer; }
+    #container #gamegrid .flipped {
+      background-color: #ff9494; }
+    #container #gamegrid .hiddenHov {
+      background-color: #ff0056;
+      color: #ff0056;
+      cursor: pointer;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    #container #gamegrid .flippedHov {
+      background-color: #dba4a8; }
+  #container #output {
+    text-align: center;
+    font-size: 20px; }
